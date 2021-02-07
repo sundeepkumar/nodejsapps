@@ -9,7 +9,7 @@ const CITIES = [
 ];
 
 const city = CITIES[Math.floor(Math.random()*CITIES.length)];
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+let url = `http://api.openweathermap.org/data/2.5/onecall?appid=${apiKey}`;
 
 request(url, function(err,response,body) {
     console.log('Fetching the weather!');
